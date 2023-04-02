@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úticél kereső</title>
+    <link href="utazas.css" rel="stylesheet" type="text/css"/>
+    <script src="utazas.js" type="text/javascript"></script>
+</head>
+<body onload="betolto()">
+    <div id="fo">
+        <table id="fenti">
+            <tr>
+                <td><h1>NYARALÁS KFT.</h1></td>
+                <td><img src="nyaralás.jpg" id="kep"></td>
+            </tr>
+        </table>
+        Válasszon célországot:
+        <select id="orszag" size="1">
+            <option value="Olaszország">Olaszország</option>
+            <option value="Görögország">Görögország</option>
+            <option value="Horvátország">Horvátország</option>
+            <option value="Törökország">Törökország</option>
+            <option value="Spanyolország">Spanyolország</optio>
+            <option value="Franciaország">Franciaország</option>
+        </select>
+        <p class="szegelyes">
+            Szállástípus:
+            <input type="radio" name="tip" id="szal" class="rad" onclick="tipi()">Szállodai szoba
+            <input type="radio" name="tip" id="apar" class="rad" onclick="tipi()">Apartman
+            <input type="radio" name="tip" id="faha" class="rad" onclick="tipi()">Faház
+            <input type="radio" name="tip" id="mobi" class="rad" onclick="tipi()">Mobilház
+            <input type="radio" name="tip" id="lako" class="rad" onclick="tipi()">Lakóautó/lakókocsi
+            <input type="radio" name="tip" id="sato" class="rad" onclick="tipi()">Sátorhely
+            <br>
+            <span id="kaja">
+                Étkezés:
+                <input type="radio" name="etk" id="all" class="rad" onclick="tipi2()">All-inclusive
+                <input type="radio" name="etk" id="felp" class="rad" onclick="tipi2()">Félpanzió
+            </span>
+        </p>
+        <p class="szegelyes">
+            Szolgáltatások:<br>
+            <input type="checkbox" id="wif" class="rad">Wifi
+            <input type="checkbox" id="koz" class="rad">Közvetlen tengerpart
+            <input type="checkbox" id="vez" class="rad">Vezetett programok
+            <input type="checkbox" id="ker" class="rad">Kerékpárkölcsönzés
+            <input type="checkbox" id="kis" class="rad">Kisállat elfogadott
+        </p>
+        <p class="szegelyes">
+            Időpontok:<br>
+            Nyaralás első napja (érkezés):
+            <input type="date" id="erk">
+            Nyaralás utolsó napja (elutazás):
+            <input type="date" id="elu">
+        </p>
+        <p class="szegelyes">
+            Felnőttek száma: <input type="number" id="fel" value="2" min="1">
+            Gyerekek száma: <input type="number" id="gye" value="2" min="0">
+        </p>
+        <p id="fiok">
+            Regisztráljon fiókot!<br><br>
+            Email: <input type="email" placeholder="(írja be az email-címét)" id="ema"><br><br>
+            Jelszó: <input type="password" placeholder="(írja be a jelszavát)" id="je1">
+            Jelszó újra: <input type="password" placeholder="(jelszó újra)" id="je2">
+        </p>
+        <p id="gomb">
+            <input type="button" value="Keresés" onclick="keres()" id="ker">
+        </p>
+    </div>
+    <p>
+        1. karakter: _ vagy angol abc (kis-nagy)<br>
+        utána tetszőleges _, angol abc, számjegy, pont<br>
+        2 pont nincs egymás mellett<br>
+        @<br>
+        utána tetszőleges _, angol abc, számjegy, pont<br>
+        2 pont nincs egymás mellett<br>
+        az utolsó pont után 2 vagy 3 angol betű<br>
+    </p>
+</body>
+</html>

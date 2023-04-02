@@ -1,0 +1,72 @@
+body {
+    background-color: antiquewhite;
+}
+
+#fo {
+    width: 70%;
+    margin: auto;
+    background-color: azure;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+#orszag, #gye, #fel, #ema, #je1, #je2 {
+    font-size: 0.8em;
+}
+
+#erk, #elu {
+    font-size: 0.9em;
+}
+
+#kep {
+    width: 100%;
+}
+
+#fenti td {
+    width: 50%;
+    text-align: center;
+}
+
+#fenti {
+    margin-bottom: 15px;
+}
+
+.szegelyes {
+    border: 1px black solid;
+    padding: 5px;
+}
+
+.rad {
+    margin-left: 10px;
+}
+
+#kaja {
+    border-top: 1px solid green;
+}
+
+#sato {
+    margin-bottom: 13px;
+    margin-top: 13px;
+}
+
+#erk, #fel, #je1 {
+    margin-right: 20px;
+}
+
+#fel, #gye {
+    width: 50px;
+}
+
+#fiok {
+    border: 2px solid blue;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+#ker {
+    font-size: 1.5em;
+}
+
+#gomb {
+    text-align: center;
+}
