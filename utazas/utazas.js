@@ -1,3 +1,5 @@
+//itt egy megjegyzés
+
 function betolto() {
     document.getElementById("szal").checked = true;
     document.getElementById("all").checked = true;
